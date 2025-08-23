@@ -9,31 +9,42 @@ body {
   margin: 0;
 }
 .container {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 .card, .number {
   margin: 10px;
-  padding: 15px;
+  padding: 20px;
   border: 2px solid #fff;
   border-radius: 10px;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
-  display: inline-block; /* Ajuste le cadre à la taille */
 }
 .number {
   min-width: 40px;
   max-width: 40px;
   text-align: center;
 }
+
+.card {
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+}
+
 .card:hover, .number:hover {
   background: #333;
 }
 
-/* --- Boutons verts --- */
+/* --- Boutons --- */
 #controls {
   margin-top: 15px;
   display: flex;
