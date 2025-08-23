@@ -33,14 +33,13 @@ body {
   background: #333;
 }
 
-
 /* --- Boutons verts --- */
 #controls {
   margin-top: 15px;
   display: flex;
   justify-content: center;
   gap: 10px;
-  width: 100%;
+  width: wrap;
 }
 .control-btn {
   background-color: #007bff; /* bleu - boutons d'action principaux */
