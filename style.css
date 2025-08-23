@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card, .number {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block; /* Ajuste le cadre à la taille */
+}
+.number {
+  min-width: 40px;
+  max-width: 40px;
+  text-align: center;
+}
+.card:hover, .number:hover {
+  background: #333;
+}
+
+
+/* --- Boutons verts --- */
+#controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.control-btn {
+  background-color: #007bff; /* bleu - boutons d'action principaux */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 220px;
+}
+.control-btn:hover {
+  background-color: #0063cc;
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto; /* empêche toute mise à l'échelle involontaire */
+}
+
+.card, .number, .control-btn {
+  touch-action: manipulation;
+}
