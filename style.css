@@ -19,32 +19,34 @@ body {
   align-items: center;
   padding: 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 .card, .number {
-  margin: 10px;
-  padding: 20px;
-  border: 2px solid #fff;
+  margin: 0px;
+  padding: 10px;
   border-radius: 10px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
 }
 
 .number {
+  border: 2px solid #fff;
   min-width: 80px;
   max-width: 80px;
+  padding: 10px;
   text-align: center;
   display: inline-block;
 }
 
 .card img {
-  width: 150px;
-  max-width: 80vw;
+  width: 120px;
+  max-width: 120px;
+  color: #111;
 }
 
-.card:hover, .number:hover {
+.number:hover {
   background: #333;
 }
 
