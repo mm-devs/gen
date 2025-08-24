@@ -1,3 +1,6 @@
+/* --- Reset utile --- */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -28,16 +31,17 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
 .number {
-  min-width: 40px;
-  max-width: 40px;
+  min-width: 80px;
+  max-width: 80px;
   text-align: center;
+  display: inline-block;
 }
 
-.card {
-  min-width: 150px;
-  max-width: 150px;
-  text-align: center;
+.card img {
+  width: 150px;
+  max-width: 80vw;
 }
 
 .card:hover, .number:hover {
