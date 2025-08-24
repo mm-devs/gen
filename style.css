@@ -54,7 +54,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  width: wrap;
+  flex-wrap: wrap;
 }
 .control-btn {
   background-color: #007bff; /* bleu - boutons d'action principaux */
